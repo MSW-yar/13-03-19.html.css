@@ -1,0 +1,57 @@
+.aaloo > h1 ~ p {
+  background-color: blue;
+  color: pink;
+  font-size: 342%;
+  display: none;
+}
+
+.aaloo > h1 ~ input {
+  font-size: 400%;
+  background-color: white;
+  color: blue;
+}
+.aaloo > p {
+  background-color: red;
+  color: yellow;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1:hover ~ p {
+  display: block;
+}
+input:focus {
+  border: 90px solid red;
+}
+body {
+  background-color: pink;
+}
+button {
+  background-color: red;
+  transition: width 3s ease-in-out, color 3s ease-in-out,
+    background-color 3s ease-in-out, border-style 3s ease-in-out,
+    border-width 3s ease-in-out, font-size 3s ease-in-out;
+  /* height: 300px; */
+  font-size: 50px;
+  /* width: 300px; */
+}
+button:hover {
+  /* width: 500px; */
+  color: green;
+  background-color: purple;
+  border-style: dashed;
+  /* border-width: 5px; */
+  transform: translate(30px);
+}
+
+/* + wale se immediate wale ko edit kare ga
+ ~ se sb ko krde ga
+ class [space] a se kahin pe bhi ho chale ga
+ line 22 se hoga ye k heading pe jaon ga tou para displa hoga and us k liye p ko none display krna zaroori hai
+ focus se input a bit change ta k lage ik u have cursor on input
+ active se click rehne pe change hoga o.e nai hoga
+ scale 3d and scale se bara and then chota
+ translate se thoda aage jaye ga
+ rotate se it will rotate */
